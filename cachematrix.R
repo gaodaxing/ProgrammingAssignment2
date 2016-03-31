@@ -20,7 +20,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 cacheSolve <- function(x, ...) {
   Invs<-x$GetInvs()
-  if(!is.na(Invs)){
+  if(!is.null(Invs)){
     message("Getting cached data")
     return(Invs)
   }
